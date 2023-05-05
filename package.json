@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./dist/index.js --es-module-specifier-resolution=node",
+    "run": "node ./dist/index.js",
+    "deploy": "tsc --watch"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "axios": "^1.4.0",
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+    "typescript": "^5.0.3"
+  }
+}

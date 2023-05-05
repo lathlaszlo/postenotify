@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "strict": false,
+    "target": "ES2022",
+    "module": "ESNext",
+    "skipLibCheck": true
+  }
+}

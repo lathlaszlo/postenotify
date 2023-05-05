@@ -5,8 +5,10 @@ egy **discordos** értesítés rendszer a **poste.io** email szerverekhez.
 * [funkciók](#funkciók)
 * [parancsok](#parancsok)
 * [config](#config)
-* [.env](#.env)
+* [enviroment](#enviroment)
 * [telepítés](#telepítés)
+* [hozzájárulás](#hozzájárulás)
+* [licensz](#licensz)
 
 ### funkciók
 - `több e-mail fiók figyelése egyszerre ✅`
@@ -29,7 +31,7 @@ példa: (mail.mestermc.hu).
 az a lényeg, hogy az `A` rekordra legyen rávezetve, ha van domainre rákötve a webmail oldala.
 - `polling_interval_ms` > ms-ben megadott időtartam, ami közönként nézi az emailek tartalmát.
 
-### .env
+### enviroment
 - `token` > a discord bot tokenje.
 - `user` > a mail szerver **Mailserver administrator** fiókjának a felhasználó neve. példa (pankix@mestermc.hu)
 - `pass` > a mail szerver **Mailserver administrator** fiókjának a jelszava.
@@ -47,5 +49,5 @@ az a lényeg, hogy az `A` rekordra legyen rávezetve, ha van domainre rákötve 
 ha bármilyen hibát találsz, vagy javítani szeretnél a codebasen, kérlek, nyiss egy issue-t, vagy csinálj egy pull requestet. <br>
 köszi <3
 
-licensz
+### licensz
 ez a szoftver a MIT licensz alatt áll. további információért olvasd el a LICENSE fájlt.

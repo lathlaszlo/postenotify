@@ -3,7 +3,7 @@ import { exit } from "process";
 // global variables > start
 const necessary_config_values = ["base_url"];
 const config_defaults = {
-    polling_interval_ms: 16 * 1000
+    polling_interval_ms: 16000
 };
 let config = await readConfigFile();
 // global variables > end
@@ -27,9 +27,7 @@ export async function readConfigFile() {
             }
         });
         Object.entries(config_defaults).forEach(([key, value]) => {
-            if (key in json_object ||
-                json_object[key] === null ||
-                json_object[key] === undefined)
+            if (key in json_object)
                 return;
             json_object[key] = value;
         });

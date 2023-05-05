@@ -6,7 +6,7 @@ import { Config } from "./config_types";
 
 const necessary_config_values = ["base_url"]
 const config_defaults = {
-  polling_interval_ms: 16 * 1000
+  polling_interval_ms: 16_000
 }
 
 let config = await readConfigFile()
@@ -38,9 +38,7 @@ export async function readConfigFile(): Promise<Config> {
 
     Object.entries(config_defaults).forEach(([key, value]) => {
       if (
-        key in json_object ||
-        json_object[key] === null ||
-        json_object[key] === undefined
+        key in json_object
       ) return
 
       json_object[key] = value
